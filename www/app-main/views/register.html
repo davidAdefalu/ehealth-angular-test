@@ -1,0 +1,38 @@
+<ion-view view-title="Ehealth Test">
+    <ion-header-bar>
+        <h1 class="title">Register User</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="register()">Register</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form name="mForm" novalidate>
+            <div class="list card">
+                <label class="item item-input">
+                    <span class="input-label">First Name</span>
+                    <input type="text" ng-model="regData.fname" required>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Last Name</span>
+                    <input type="text" ng-model="regData.lname" required>
+                </label>
+                
+                
+                
+                <label class="item item-input">
+                    <span class="input-label">Address</span>
+                    <input type="text" ng-model="regData.address" required>
+                </label>
+                
+            </div>
+            <div style="padding: 0px 10px;">
+                <button class="button button-block button-positive" ng-disabled="mForm.$invalid" ng-click="register()" type="button">
+                    <i class="fa fa-check fa-lg"></i> Submit
+                </button>
+                <button class="button button-block button-dark" type="reset">
+                    <i class="fa fa-remove fa-lg"></i> Cancel
+                </button>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>
