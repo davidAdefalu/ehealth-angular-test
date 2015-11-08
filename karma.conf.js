@@ -1,7 +1,8 @@
 // Karma configuration
-// Generated on Mon Nov 02 2015 16:15:20 GMT+0100 (W. Europe Standard Time)
+// Generated on Sun Nov 08 2015 12:49:39 GMT+0100 (W. Europe Standard Time)
 
 module.exports = function(config) {
+    'use strict';
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -15,11 +16,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        'www/lib/angular',
+        'www/lib/angular/angular.js',
         'node_modules/angular-mocks/angular-mocks.js',
-        'www/app-main/**/*.js',
-        'www/app-main/*/*.js',
-        'app-test/*.js'
+        'www/app-main/app/app.js',
+        'www/lib/pouchdb/dist/pouchdb.js',
+        'www/app-test/*.js',
+        'www/app-main/controllers/*.js',
+        'www/app-main/servicesData/*.js'
+        
     ],
 
 

@@ -1,9 +1,9 @@
 (function () {
         'use strict';
         angular.module('ehealth.services').factory('pouchDbService', pouchDbService);
-        pouchDbService.$inject = ['$q','notificationService'];
+        pouchDbService.$inject = ['notificationService'];
 
-        function pouchDbService($q, notification) {
+        function pouchDbService(notification) {
             var vm = this;
         
              var _db  = new PouchDB('ehealthDb');  
@@ -27,10 +27,6 @@
 
             }
             
-            
-            
-           
-
             angular.extend(this, 
             {
                 addRecord: addRecord,
